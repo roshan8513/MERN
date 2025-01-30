@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .section{
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+    input[type="text"], input[type="email"], input[type="date"], input[type="password"],input[type="file"], textarea,select {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+        background-color: lightgoldenrodyellow;
+    }
+    input[type="text"], input[type="email"], input[type="date"], input[type="password"],input[type="file"]{
+        border-color: red;
+    }
+    input[type='submit'], input[type='reset']{
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+        background-color: blue;
+    }
+    input[type='reset']{
+        background-color: red;
+    }
+    textarea,select{
+        border-color: green;
+    }
+    .section > p{
+        font-weight: bold;
+        font-size: large;
+
+    }
+    .form-group {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .form-group input {
+        flex: 1;
+    }
+
+    .form-group input[type="text"], input[type="file"], select ,textarea{
+        flex: 2;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f7fa;
+        margin: 0;
+        padding: 0;
+    }
+    h1{
+        color: rgb(2, 11, 84);
+        text-align: center;
+        font-weight: bold;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <h1>User Registration Form</h1>
+    <form>
+        <div class="section">
+            <label for=""><h2>Student Information</h2></label>
+            <div class="form-group">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            </div>
+        </div>
+        <div class="section">
+            <label for=""><h2>Contact Information</h2></label>
+            <div class="form-group">
+            <input type="email" placeholder="Enter your E-mail">
+            </div>
+        </div>
+        <div class="section">
+            <label for=""><h2>Password</h2></label><br>
+            <div class="form-group">
+            <input type="password" placeholder="Enter Password">
+            </div>
+        </div>
+        <div class="section">
+            <label for=""><h2>Confirm Password</h2></label>
+            <div class="form-group">
+            <input type="password" placeholder="Re-enter Password">
+            </div>
+        </div>
+        <div class="section">
+            <label for=""><h2>Date of Birth:</h2></label>
+            <div class="form-group">
+            <input type="date" placeholder="Date of Birth"> 
+            </div>
+        </div>
+        <div class="section">
+            <label for=""><h2>Profile Picture</h2></label>
+            <div class="form-group">
+            <input type="file" placeholder="Choose file">
+            </div>
+        </div>
+        <div class="section">
+            <label for=""><h2>Comments/Feedback</h2></label>
+            <div class="form-group">
+            <textarea placeholder="Enter your Feedback" rows="5" cols="50">Enter your Comments/Feedback</textarea>
+            </div>
+        </div>
+        <div class="section">
+            <label for=""><h2>Newsletter Subscription</h2></label>
+            <div class="form-group">
+            <select name="" id="">
+                <option value="Monthly">Monthly</option>
+                <option value="Quaterly">Quaterly</option>
+                <option value="Biannual">BIannual</option>
+                <option value="Yearly">Yearly</option>
+            </select>
+            </div>
+        </div>
+        <div class="section">
+            <p>I agree to the <a href="">Terms and Conditions</a></p>
+            <div class="form-group">
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+            </div>
+        </div>
+        <!--
+        <input type="date" placeholder="Date of Birth">
+        <input type="number" placeholder="Student ID"><br><br>
+        <label for="">Address</label><br>
+        <input type="text" placeholder="Street Address"><br>
+        <input type="text" placeholder="city">
+        <input type="text" placeholder="State/Province"><br><br>
+        <input type="text" placeholder="Country">
+        <input type="text" placeholder="Zip Code"><br><br>
+        
+        <input type="number" placeholder="Mobile Number"><br><br>
+        <label for="">Program of Interest</label><br>
+        <select name="options">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select><br><br>
+        <label for=""> Degree Level</label><br>
+        <input type="radio" name="degree level">Undergraduate
+        <input type="radio" name="degree level">postgraduate <br><br>
+        <input type="submit" value="Submit">
+        -->
+        
+
+
+
+    </form>
+    </div>
+</body>
+</html

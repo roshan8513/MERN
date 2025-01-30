@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #4A90E2;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .image-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            margin-left: 100px; ;
+        }
+
+        .image-section img {
+            max-width: 180px;
+            margin-right: 50px;
+            border-radius: 50%;
+        }
+
+        .form-section {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+
+        input[type="text"], input[type="email"], input[type="date"], input[type="number"], select {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            background-color: lightgoldenrodyellow;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .radio-label {
+            font-weight: normal;
+            margin-right: 20px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4A90E2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #357ABD;
+        }
+
+        .form-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .form-group input {
+            flex: 1;
+        }
+
+        .form-group input[type="text"] {
+            flex: 2;
+        }
+
+        .form-container {
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+            color: lightblue;
+        }
+
+        .form-container .image-section {
+            flex: 0;
+        }
+
+        .form-container .form-fields {
+            flex: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="image-section">
+                <img src="./images/unnamed.jpg" alt="Logo">
+            </div>
+            <div class="form-fields">
+                <header><h1>Student Registration Form</h1></header>  
+            </div>
+        </div>
+
+        <form>
+            <div class="form-section">
+                <label for=""><h2>Student Information</h2></label>
+                <div class="form-group">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Middle Name">
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                    <input type="date" placeholder="Date of Birth">
+                    <input type="number" placeholder="Student ID">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <label for=""><h2>Address</h2></label>
+                <div class="form-group">
+                    <input type="text" placeholder="Street Address">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="City">
+                    <input type="text" placeholder="State/Province">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Country">
+                    <input type="text" placeholder="Zip Code">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <label for=""><h2>Contact Information</h2></label>
+                <div class="form-group">
+                    <input type="email" placeholder="E-mail">
+                    <input type="number" placeholder="Mobile Number">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <label for=""><h2>Program of Interest</h2></label>
+                <select name="options">
+                    <option value="option1">Frontend</option>
+                    <option value="option2">Backend</option>
+                    <option value="option3">Fullstack</option>
+                </select>
+            </div>
+
+            <div class="form-section">
+                <label for=""><h2>Degree Level</h2></label>
+                <div>
+                    <input type="radio" name="degree level" id="undergraduate">
+                    <label class="radio-label" for="undergraduate">Undergraduate</label>
+                    <input type="radio" name="degree level" id="postgraduate">
+                    <label class="radio-label" for="postgraduate">Postgraduate</label>
+                </div>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

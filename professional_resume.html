@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume</title>
+    <style>
+        /* General body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        /* Styling for the profile section */
+        div > div {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+        }
+
+        img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 150px;  /* Set the width of the image */
+            height: 150px;
+        }
+
+        div > div h2 {
+            margin: 0;
+            color: #007bff;
+        }
+
+        /* Styling for sections */
+        section {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #201f1f;
+            margin-bottom: 8px;
+        }
+
+        /* List styling */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        /* Links styling */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Pseudo-class and combinator examples */
+        section ul li:first-child {
+            font-weight: bold;
+            color:black;
+        }
+
+        section ul li:nth-child(2) {
+            font-weight: bold;
+            color:black;
+        }
+
+        div > div > p:nth-of-type(odd) {
+            font-style: italic;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Combinator usage: styling anchor elements inside section */
+        section a {
+            font-weight: bold;
+        }
+        .main{
+            background-color:white;
+            color: black;
+            padding: 20px;
+
+            margin:  20px;
+            border-radius: 8px;
+        }
+        .main > p{
+            line-height: 1.5;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Professional Resume</h1>
+    </header>
+
+    <div>
+        <div>
+            <img src="./images/rakesh image.jpg" alt="Profile Picture">
+            <div>
+                <ul>
+                    <h2>Rakesh Roshan</h2>
+                    <li><strong>Email:</strong> rakesh8513pn@gmail.com</li>
+                    <li><strong>Address:</strong> Hyderabad, Telangana</li>
+                    <li><strong>Graduation:</strong> Institute of Aeronautical Engineering</li>
+                    <li><strong>School:</strong> Legend High School</li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <section>
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Software Engineer</strong> at Accenture (2024 - Present)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Python, HTML, CSS</li>
+                <li>Frameworks: Django, Flask, React, Node.js</li>
+            </ul>
+        </section>
+        <section class = 'main'>
+            <h2>Projects</h2>
+            <h3>The Phish tool</h3>
+            <p>
+                <strong>Description:</strong><br>
+                The Phish tool is a web based application which is used for finding whether the website URL is legitimate
+                or not. ThePhishTool uses machine learning algorithms to predict the website URLs are legitimate
+                or not.</p>
+            <h3>Fake News Detection</h3>
+            <p>
+            <strong>Description:</strong><br>
+            Fakes News Detection System aims to Detect whether News is fake or appropriate. For this Project I
+            have used Machine Learning algorithm (Random Forest Classifier) which has given better accuracy for
+            detecting fake news.</p>
+
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>Feel free to <a href="mailto:rakesh8513pn@gmail.com">email me</a> or connect on <a href="https://www.linkedin.com/in/roshan8513/">LinkedIn</a>.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Kolipka Rakesh Roshan. All rights reserved.</p>
+    </footer>
+</body>
+</html>

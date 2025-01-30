@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Calories Calculator</title>
+</head>
+<body>
+    <h1>Maintenance Calories</h1>
+    <form>
+        <label for="age">Age (years):</label>
+        <input type="number" id="age" required><br><br>
+
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" required><br><br>
+
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br><br>
+
+        <input type="submit" value="Calculate">
+    </form>
+
+    <h2>BMR Index Table</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Activity Level</th>
+                <th>Description</th>
+                <th>Multiplier</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sedentary</td>
+                <td>Little or no exercise</td>
+                <td>1.2</td>
+            </tr>
+            <tr>
+                <td>Lightly Active</td>
+                <td>Light exercise/sports 1-3 days per week</td>
+                <td>1.375</td>
+            </tr>
+            <tr>
+                <td>Moderately Active</td>
+                <td>Moderate exercise/sports 3-5 days per week</td>
+                <td>1.55</td>
+            </tr>
+            <tr>
+                <td>Very Active</td>
+                <td>Hard exercise/sports 6-7 days per week</td>
+                <td>1.725</td>
+            </tr>
+            <tr>
+                <td>Extra Active</td>
+                <td>Very hard exercise/physical job</td>
+                <td>1.9</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

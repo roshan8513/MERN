@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Centered Boxes with Images</title>
+    <style>
+        /* Container to position elements */
+        *{
+            margin: 0%;
+        }
+        .main img{
+            position: absolute;
+            height: 70%;
+            width: 100%;
+            z-index: -1000;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Full height of the viewport */
+        }
+
+        /* Styling for all boxes */
+        .box {
+            position: absolute;
+            top: 55%; /* Position 40% from the top */
+            width: 210px;
+            height: 260px;
+            background-color: lightblue;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; /* Ensures the image does not overflow */
+            padding: 20px;
+        }
+
+        /* Styling for images inside boxes */
+        .box img {
+            width: 160px;* Set image width */
+            height: 180px; Set image height */
+            object-fit: fill; /* Ensures images maintain aspect ratio */
+        }
+
+        /* Positioning the three boxes equally spaced */
+        .box1 { left: 25%; }
+        .box2 { left: 50%; transform: translateX(-50%); }
+        .box3 { right: 25%; }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="./images/assesment 6/oneplus main image.jpg" alt="oneplus image">
+    </div>
+    <div class="container">
+        <div class="box box1">
+            <img src="./images/assesment 6/spyxfamily.jpg" alt="Image 1">
+        </div>
+        <div class="box box2">
+            <img src="./images/assesment 6/headpones.jpg" alt="Image 2">
+        </div>
+        <div class="box box3">
+            <img src="./images/assesment 6/tablet.jpg" alt="Image 3">
+        </div>
+    </div>
+
+</body>
+</html>

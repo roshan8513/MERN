@@ -1,0 +1,341 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #6F6AF7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.heading {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: opacity 0.3s;
+}
+
+.menu a:hover {
+    opacity: 0.8;
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 10px;
+    transition: opacity 0.3s;
+}
+
+.dropbtn:hover {
+    opacity: 0.8;
+}
+
+/* Search bar styling */
+.search-bar input {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    font-size: 0.9rem;
+}
+
+/* Main content section */
+.first-section {
+    padding-top: 100px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 100px 20px 40px;
+}
+
+/* Image and textarea container */
+.image {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.image img {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 70%;
+}
+
+.image textarea {
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.25;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Stats container */
+.container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping to the next line */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 30px;
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
+}
+
+.container .box {
+    width: calc(25% - 10px); /* Keeps boxes on a single line */
+    height: 100px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#first {
+    background-color: #6F6AF7;
+}
+
+#second {
+    background-color: blue;
+}
+
+#third {
+    background-color: blueviolet;
+}
+
+#fourth {
+    background-color: violet;
+}
+
+.container .box:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Inner box styles */
+.innerbox {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(84, 10, 244);
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.left {
+    width: 250px;
+    flex-shrink: 0;
+    border-right: 1px solid #e0e0e0;
+    padding-right: 20px;
+}
+
+.left .box {
+    background: #f8f9fa;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.right {
+    flex: 1;
+    min-width: 0;
+    position: relative; /* Ensures that the button is positioned relative to the right box */
+}
+
+.right .box {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 12px;
+    height: 100%;
+    border-color: #333;
+}
+
+.right .box h2 {
+    color: #6F6AF7;
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding-bottom: 0px;
+}
+
+/* Next button */
+.next-button {
+    position: absolute;
+    bottom: 20px;  /* Adjust the bottom position */
+    right: 20px;   /* Adjust the right position */
+    padding: 10px 20px;
+    background-color: #6F6AF7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.next-button:hover {
+    background-color: #5c5ae6;  /* Slightly darker shade on hover */
+    transform: scale(1.05);      /* Slightly enlarge the button on hover */
+}
+
+/* Button Styles */
+.button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button img {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* Responsive Styles */
+
+/* Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    .menu a {
+        font-size: 1rem;
+    }
+
+    .container {
+        flex-wrap: nowrap; /* Prevents wrapping even on small screens */
+        overflow-x: auto; /* Enables horizontal scrolling */
+        gap: 10px;
+    }
+
+    .container .box {
+        width: calc(50% - 10px); /* Adjust width to fit 2 boxes per row */
+    }
+
+    .image {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .image img,
+    .image textarea {
+        width: 100%;
+    }
+
+    .innerbox {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        border-right: none;
+    }
+
+    .right {
+        width: 100%;
+    }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar {
+        padding: 0 30px;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .menu a {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        flex-wrap: nowrap; /* Keeps boxes in one line */
+        gap: 15px;
+    }
+
+    .container .box {
+        width: calc(33.33% - 10px); /* Fits 3 boxes per row */
+    }
+
+    .image {
+        gap: 20px;
+    }
+
+    .image img,
+    .image textarea {
+        width: 45%;
+    }
+
+    .innerbox {
+        flex-direction: row;
